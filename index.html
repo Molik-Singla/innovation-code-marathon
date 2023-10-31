@@ -1,0 +1,349 @@
+<!-- Cafe or  Health Care  or News -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./src/Icons/favicon-32x32.png" type="image/x-icon" />
+        <title>Cafe Street</title>
+        <meta name="description" content="We created a website of cafe using HTML and TailwindCss" />
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./src/output.css" />
+
+        <!-- Fonts - Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    </head>
+    <body class="w-full h-full min-h-screen font-custom-poppins">
+        <!-- hero and header -->
+        <section class="hero w-full h-full min-h-screen flex justify-center bg-primary-light">
+            <section class="w-full h-full min-h-screen max-w-7xl px-4">
+                <header class="w-full h-28 md:h-20 flex gap-4 flex-col items-center justify-center px-3 md:flex-row md:justify-between">
+                    <div class="w-full md:w-auto flex justify-between items-center">
+                        <a href="#">
+                            <img class="w-32 md:w-40 md:h-9 h-7" src="./src/Images/logo.png" alt="LOGO" />
+                        </a>
+                        <div class="icon md:hidden block cursor-pointer">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.66667 9.33333H25.0533C25.4259 9.33334 25.7943 9.41142 26.1349 9.56254C26.4754 9.71365 26.7805 9.93444 27.0305 10.2107C27.2805 10.4869 27.4698 10.8125 27.5863 11.1664C27.7027 11.5203 27.7437 11.8946 27.7067 12.2653L26.9067 20.2653C26.8409 20.9233 26.5329 21.5334 26.0426 21.9772C25.5523 22.4209 24.9146 22.6666 24.2533 22.6667H11.52C10.9033 22.6669 10.3056 22.4534 9.82859 22.0625C9.35162 21.6716 9.02487 21.1274 8.904 20.5227L6.66667 9.33333Z"
+                                    stroke="#1D1D1D"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M21.3333 28H24M6.66667 9.33333L5.58667 5.00933C5.51444 4.721 5.34794 4.46508 5.11361 4.28221C4.87928 4.09934 4.59057 4.00001 4.29333 4H2.66667L6.66667 9.33333ZM10.6667 28H13.3333H10.6667Z"
+                                    stroke="#1D1D1D"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <circle cx="27" cy="9" r="4.5" fill="#FF912B" stroke="white" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <ul
+                        class="w-full md:w-auto flex justify-between sm:justify-evenly gap-5 md:gap-10 text-sm md:text-base font-medium mt-2 md:mt-0 lg:text-lg"
+                    >
+                        <li class="tracking-wide hover:text-primary cursor-pointer transition-all duration-200">Home</li>
+                        <li class="tracking-wide hover:text-primary cursor-pointer transition-all duration-200">About</li>
+                        <li class="tracking-wide hover:text-primary cursor-pointer transition-all duration-200">Our Product</li>
+                        <li class="tracking-wide hover:text-primary cursor-pointer transition-all duration-200">Delivery</li>
+                    </ul>
+                    <div class="icon hidden md:block cursor-pointer">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.66667 9.33333H25.0533C25.4259 9.33334 25.7943 9.41142 26.1349 9.56254C26.4754 9.71365 26.7805 9.93444 27.0305 10.2107C27.2805 10.4869 27.4698 10.8125 27.5863 11.1664C27.7027 11.5203 27.7437 11.8946 27.7067 12.2653L26.9067 20.2653C26.8409 20.9233 26.5329 21.5334 26.0426 21.9772C25.5523 22.4209 24.9146 22.6666 24.2533 22.6667H11.52C10.9033 22.6669 10.3056 22.4534 9.82859 22.0625C9.35162 21.6716 9.02487 21.1274 8.904 20.5227L6.66667 9.33333Z"
+                                stroke="#1D1D1D"
+                                stroke-width="2"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M21.3333 28H24M6.66667 9.33333L5.58667 5.00933C5.51444 4.721 5.34794 4.46508 5.11361 4.28221C4.87928 4.09934 4.59057 4.00001 4.29333 4H2.66667L6.66667 9.33333ZM10.6667 28H13.3333H10.6667Z"
+                                stroke="#1D1D1D"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <circle cx="27" cy="9" r="4.5" fill="#FF912B" stroke="white" />
+                        </svg>
+                    </div>
+                </header>
+
+                <!-- hero -->
+                <section class="w-full h-auto min-h-[calc(100vh-7rem)] md:min-h-[calc(100vh-5rem)] flex flex-col md:flex-row pt-8">
+                    <!-- left -->
+                    <div class="left w-full md:w-1/2 flex flex-col gap-6 justify-center items-start">
+                        <h1 class="text-secondary font-semibold text-3xl md:text-5xl sm:w-4/5 tracking-wide md:leading-[60px_!important]">
+                            Enjoy your <span class="text-primary">coffee</span> before your activity
+                        </h1>
+                        <p class="md:text-lg text-gray-500 md:w-3/5 sm:w-4/5">
+                            Boost your productivity and build your mood with a glass of coffee in the morning
+                        </p>
+
+                        <button
+                            class="rounded-full py-3 px-8 bg-secondary text-white flex gap-2 hover:bg-secondary/80 transition-all duration-200 mt-6"
+                        >
+                            <span>Order now</span>
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <circle cx="11" cy="11" r="11" fill="#FF912B" />
+                                <rect x="5" y="5" width="12" height="12" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_302_27" transform="scale(0.0166667)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_302_27"
+                                        width="60"
+                                        height="60"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="
+                                    />
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- right -->
+                    <div class="right w-full md:w-1/2 flex justify-center items-center mt-20 md:mt-0">
+                        <img class="w-[90%]" src="./src/Images/hero.png" alt="COFFEE_CUP" />
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <!-- popular now -->
+        <section class="popular-now w-full h-auto min-h-screen flex justify-center relative pt-20 md:pt-0">
+            <section class="w-full h-[70%] lg:h-1/2 absolute bg-primary-light z-0 top-0 lg:top-0"></section>
+            <section class="w-full h-full min-h-[90vh] max-w-7xl px-4 flex flex-col gap-12 md:gap-20 bg-transparent z-20">
+                <div>
+                    <p class="text-2xl md:text-3xl font-semibold">Popular <span class="border-b-4 border-primary">Now</span></p>
+                </div>
+
+                <div class="w-full h-auto pb-12">
+                    <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-items-center relative z-10 gap-y-10">
+                        <section class="w-full h-[64%] top-[41%] lg:h-full bg-primary-medium absolute md:top-[34%] rounded-[50px] z-0"></section>
+                        <section class="popular_single_card">
+                            <img class="rounded-lg" src="./src/Images/popular_1.png" alt="POPULAR-1" />
+
+                            <div class="flex justify-between text-2xl font-semibold text-gray-800">
+                                <p>Vanilla Latte</p>
+                                <span class="text-lg">Rs. 340</span>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-4">
+                                    <div class="hot_cold_active">Hot</div>
+                                    <div class="hot_cold_inactive">Cold</div>
+                                </div>
+
+                                <div class="popular_button_for_cart">
+                                    <img src="./src/Icons/cart_small.svg" alt="" />
+                                </div>
+                            </div>
+                        </section>
+                        <section class="popular_single_card">
+                            <img class="rounded-lg" src="./src/Images/popular_2.png" alt="POPULAR-1" />
+
+                            <div class="flex justify-between text-2xl font-semibold text-gray-800">
+                                <p>Espresso</p>
+                                <span class="text-lg">Rs. 220</span>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-4">
+                                    <div class="hot_cold_inactive">Hot</div>
+                                    <div class="hot_cold_inactive">Cold</div>
+                                </div>
+                                <div class="popular_button_for_cart">
+                                    <img src="./src/Icons/cart_small.svg" alt="" />
+                                </div>
+                            </div>
+                        </section>
+                        <section class="popular_single_card">
+                            <img class="rounded-lg" src="./src/Images/popular_3.png" alt="POPULAR-1" />
+
+                            <div class="flex justify-between text-2xl font-semibold text-gray-800">
+                                <p>Hazelnut Latte</p>
+                                <span class="text-lg">Rs. 300</span>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-4">
+                                    <div class="hot_cold_inactive">Hot</div>
+                                    <div class="hot_cold_active">Cold</div>
+                                </div>
+                                <div class="popular_button_for_cart">
+                                    <img src="./src/Icons/cart_small.svg" alt="" />
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- services -->
+        <section class="services w-full h-auto flex justify-center relative pt-20 lg:pt-0">
+            <section class="w-full h-full min-h-[80vh] max-w-7xl px-4 flex flex-col gap-20">
+                <div>
+                    <p class="text-2xl md:text-3xl font-semibold">How to use delivery <span class="border-b-4 border-primary">Service</span></p>
+                </div>
+
+                <div class="w-full flex flex-col md:flex-row h-auto gap-20">
+                    <div class="flex flex-col gap-3 w-full items-center">
+                        <img class="w-28 md:w-36" class="" src="./src/Images/service_1.png" alt="SERVICE-1" />
+                        <div class="flex flex-col justify-center items-center">
+                            <p class="text-lg font-semibold">Choose your coffee</p>
+                            <p class="text-sm">there are 20+ coffees for you</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 w-full items-center">
+                        <img class="w-28 md:w-36" class="" src="./src/Images/service_2.png" alt="SERVICE-2" />
+                        <div class="flex flex-col justify-center items-center">
+                            <p class="text-lg font-semibold">We delivery it to you</p>
+                            <p class="text-sm">Choose delivery service</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 w-full items-center">
+                        <img class="w-28 md:w-36" class="" src="./src/Images/service_3.png" alt="SERVICE-3" />
+                        <div class="flex flex-col justify-center items-center">
+                            <p class="text-lg font-semibold">Enjoy your coffee</p>
+                            <p class="text-sm">Get fresh coffee</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- about -->
+        <section class="services w-full h-auto min-h-screen flex justify-center mt-40 lg:mt-0">
+            <section class="w-full h-full max-w-7xl px-4 flex items-center">
+                <div class="w-full h-1/2 flex flex-col md:flex-row md:gap-20 bg-primary-light relative pb-6 md:pb-0">
+                    <div class="img w-full md:w-[45%] flex justify-center items-center">
+                        <img class="relative top-[-5rem] border-8 border-white rounded-xl w-3/4" src="./src/Images/about.png" alt="" />
+                    </div>
+
+                    <div class="flex flex-col gap-2 md:gap-5 w-full md:w-[55%] justify-center items-center md:items-start px-4 md:px-0">
+                        <div>
+                            <p class="text-2xl md:text-3xl font-semibold">About <span class="border-b-4 border-primary">Us</span></p>
+                        </div>
+                        <p class="font-semibold text-xl max-w-sm mt-5 text-center md:text-start">We provide quality coffee, and ready to deliver.</p>
+                        <p class="max-w-md text-center md:text-start">
+                            We are a company that makes and distributes delicious drinks. Our main product is made with a secret recipe and available
+                            in stores worldwide.
+                        </p>
+
+                        <button
+                            class="rounded-full py-3 px-8 bg-secondary text-primary-light flex gap-2 hover:bg-secondary/80 transition-all duration-200 mt-6"
+                        >
+                            <span>Get your coffee</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- special menu -->
+        <section class="popular-now w-full h-auto flex justify-center relative pt-20 md:pt-0">
+            <section class="w-full h-full min-h-[90vh] max-w-7xl px-4 flex flex-col gap-12 md:gap-20 bg-transparent z-20">
+                <div>
+                    <p class="text-2xl md:text-3xl font-semibold">Special menu <span class="border-b-4 border-primary">for you</span></p>
+                </div>
+
+                <div class="w-full h-auto pb-12">
+                    <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-items-center relative z-10 gap-y-10">
+                        <section class="popular_single_card">
+                            <img class="rounded-lg" src="./src/Images/special_1.png" alt="POPULAR-1" />
+
+                            <div class="flex justify-between text-2xl font-semibold text-gray-800">
+                                <p>Sandwich</p>
+                                <span class="text-lg">Rs. 250</span>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-sm text-gray-600">bread with meat and vegetables</p>
+
+                                <div class="popular_button_for_cart">
+                                    <img src="./src/Icons/cart_small.svg" alt="" />
+                                </div>
+                            </div>
+                        </section>
+                        <section class="popular_single_card">
+                            <img class="rounded-lg" src="./src/Images/special_2.png" alt="POPULAR-1" />
+
+                            <div class="flex justify-between text-2xl font-semibold text-gray-800">
+                                <p>Hot Milk</p>
+                                <span class="text-lg">Rs. 120</span>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm text-gray-600">Hot Milk with less sugar</p>
+                                <div class="popular_button_for_cart">
+                                    <img src="./src/Icons/cart_small.svg" alt="" />
+                                </div>
+                            </div>
+                        </section>
+                        <section class="popular_single_card">
+                            <img class="rounded-lg" src="./src/Images/special_3.png" alt="POPULAR-1" />
+
+                            <div class="flex justify-between items-center text-2xl font-semibold text-gray-800">
+                                <p>Icecream Coffee</p>
+                                <span class="text-lg">Rs. 180</span>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm text-gray-600">Coffe with ice cream vanilla</p>
+                                <div class="popular_button_for_cart">
+                                    <img src="./src/Icons/cart_small.svg" alt="" />
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- footer -->
+        <footer class="w-full h-auto p-4 md:p-8 bg-secondary text-white flex flex-col sm:flex-row gap-12 md:justify-around">
+            <!-- 1 -->
+            <div class="flex flex-col gap-3">
+                <p class="text-xl md:text-2xl font-semibold">Contact <span class="border-b-4 border-primary">Us</span></p>
+
+                <ul class="font-medium flex flex-col gap-1 mt-1 md:pt-3">
+                    <li>123 Damion Ridges</li>
+                    <li>West Reillyburgh</li>
+                </ul>
+
+                <ul class="font-medium flex flex-col gap-1 md:mt-3">
+                    <li>Mobile : <a href="#" class="text-primary-medium">+91 8628498364</a></li>
+                    <li>Email : <a href="mail:cafestreet@gmail.com" class="text-primary-medium">cafestreet@gmail.com</a></li>
+                    <li>Website : <a href="#" ="text-primary-medium">www.cafestreet.com</a></li>
+                </ul>
+            </div>
+
+            <!-- 2 -->
+            <div class="flex flex-col">
+                <p class="text-xl md:text-2xl font-semibold">Connect with <span class="border-b-4 border-primary">Us</span></p>
+
+                <section class="font-medium flex items-center gap-4 mt-4">
+                    <a href="#">
+                        <img class="w-7" src="./src/Icons/insta.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img class="w-8 relative top-[2px]" src="./src/Icons/twitter.svg" alt="" />
+                    </a>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>

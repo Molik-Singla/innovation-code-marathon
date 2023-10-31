@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h1_leading{
+    line-height: 58px !important;
+}
+
+.hot_cold_active{
+    @apply text-primary px-4 rounded-md border-[2px] border-primary font-semibold
+}
+
+.hot_cold_inactive{
+    @apply text-primary/60 px-2 rounded-md border-[2px] border-primary/60 font-semibold
+}
+
+.popular_single_card{
+    @apply max-w-xs w-full p-4 border-[10px] border-gray-100/30 rounded-xl bg-white shadow-lg flex flex-col gap-4 z-20 hover:scale-105 transition-all duration-300 cursor-pointer
+}
+
+.popular_button_for_cart{
+    @apply w-10 h-10 rounded-full bg-primary flex justify-center items-center hover:bg-primary/70 transition-all duration-200 cursor-pointer
+}
